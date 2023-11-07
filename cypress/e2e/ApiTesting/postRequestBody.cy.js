@@ -37,7 +37,7 @@ describe('API Testing', () => {
     })
   })
 
-  it.only('Approach3', () => {
+  it.only('Approach3-Getting Data From Fixture File', () => {
     cy.fixture('postData').then(fixtureData => {
       const requestBody = fixtureData
       cy.request({

@@ -1,5 +1,5 @@
 {
   "title" : "Post Request",
-  "body" : "Randomly generate json object",
+  "body" : "This is the post request getting data from fixture file",
   "userId" : 2
 }
