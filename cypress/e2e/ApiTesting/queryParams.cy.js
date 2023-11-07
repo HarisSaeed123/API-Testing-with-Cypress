@@ -21,6 +21,8 @@ describe('API Testing', () => {
         expect(data.body.page).to.eq(2)
         // Verifying the result on per page
         expect(data.body.per_page).to.eq(6)
+        // Verifying that the response is an array
+        cy.wrap(data.body.data).should('be.an', 'array')
        })
     })
 })
