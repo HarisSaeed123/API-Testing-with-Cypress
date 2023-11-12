@@ -1,11 +1,12 @@
 ///<reference types = "cypress"/>
 // query parameter is passed after the question mark like:url/?page=2
+const queryParam = {page : 2}
 describe('API Testing', () => {
     it('Passing Query Parameters', () => {
        cy.request({
            method : 'GET',
-           url : 'https://reqres.in/api/users',
-           qs : {page : 2}
+           url : `https://reqres.in/api/users`,
+           qs : queryParam
        }).then(response => {
         return response.json
        }).then(data => {
